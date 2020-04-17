@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "lib": [
+      "es2020",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "./node_modules",
+    "./src/server"
+  ]
+}
+
