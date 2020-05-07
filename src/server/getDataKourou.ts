@@ -6,7 +6,7 @@ import moji from 'moji';
 import { Case, CaseModel } from './models';
 
 const TIME_OUT = 180000;
-const SLEEP = 30000;
+const SLEEP = 300000;
 const URL =
   'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00086.html';
 
@@ -42,7 +42,7 @@ async function scrapeDaily(
   );
   const toNum = (str: string) => {
     return Number(
-      moji(str.trim().replace(',', '').replace('名', ''))
+      moji(str.trim().replace(/,/g, '').replace('名', ''))
         .convert('ZE', 'HE')
         .toString()
     );
