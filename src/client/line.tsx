@@ -43,17 +43,18 @@ export const LineGraph: FC<Props> = (props) => {
   }
 
   function drawGraph(graphType: string) {
+    // colors from https://zenodo.org/record/3381072#.XrPm0RMzZTY
     const colors = [
-      'pink',
-      'red',
-      'green',
-      'blue',
-      'yellow',
-      'lime',
-      'orange',
-      'skyblue',
-      'magenta',
-      'rebeccapurple',
+      '#88CCEE',
+      '#44AA99',
+      '#117733',
+      '#332288',
+      '#DDCC77',
+      '#999933',
+      '#CC6677',
+      '#882255',
+      '#AA4499',
+      '#DDDDDD',
     ];
 
     // 日付リスト

@@ -154,3 +154,7 @@ export default async function scrapeKourow() {
     browser.close();
   }
 }
+if (require.main === module) {
+  mongoose.connect('mongodb://localhost:27017/corona');
+  scrapeKourow();
+}
