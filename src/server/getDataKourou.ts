@@ -6,7 +6,7 @@ import moji from 'moji';
 import { Case, CaseModel } from './models';
 
 const TIME_OUT = 180000;
-const SLEEP = 300000;
+const SLEEP = 5000;
 const URL =
   'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00086.html';
 
@@ -138,7 +138,7 @@ export default async function scrapeKourow() {
   });
   try {
     const links = await getLinks(browser);
-    for (const link of links.slice(0, 1)) {
+    for (const link of links.slice(0, 10)) {
       // 過去分は取得済みなので、直近リンク以外を除外
       //for (const link of links) {
       console.log(link);
@@ -158,3 +158,4 @@ if (require.main === module) {
   mongoose.connect('mongodb://localhost:27017/corona');
   scrapeKourow();
 }
+
