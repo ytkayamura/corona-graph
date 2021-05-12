@@ -26,7 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "dataframe-js": "^1.4.3",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
